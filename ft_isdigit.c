@@ -6,11 +6,11 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 10:50:38 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/13 12:27:47 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/13 16:21:42 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(intq c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
