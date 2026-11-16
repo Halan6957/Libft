@@ -6,7 +6,7 @@
 #    By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/09 10:07:12 by ahautefe          #+#    #+#              #
-#    Updated: 2026/11/12 13:41:36 by ahautefe         ###   ########.fr        #
+#    Updated: 2026/11/16 10:57:22 by ahautefe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,3 +34,5 @@ fclean : clean
 	rm -f $(NAME)
 
 re : fclean all
+
+#ajouter ligne pour les fichier .d
