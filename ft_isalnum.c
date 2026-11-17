@@ -6,11 +6,11 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 10:59:12 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/13 13:16:57 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/17 12:17:34 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
 	if ((c > 47 && c < 58) || (c > 64 && c < 91) || (c > 96 && c < 123))
 		return (1);
