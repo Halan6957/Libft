@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 13:51:25 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/19 16:25:28 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/20 14:19:55 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,44 +15,31 @@
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstclear(t_list **lst, void (del)(void *));
 
-//static unsigned int	ft_count_nodes(t_list *lst)
-//{
-//	unsigned int	count;
-//
-//	count = 1;
-//	if (!lst)
-//		return (NULL);
-//	while (lst->next)
-//	{
-//		count ++;
-//		lst = lst->next;
-//	}
-//	return (count);
-//}
-
-ft_lstmap	*ft_lstmap(t_list *lst, void *(f*)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list			**new_list;
+	t_list			*new_list;
 	t_list			*new_node;
+	void			*content;
 
 	if (!lst || !f || !del)
 		return (NULL);
-	//count = ft_count_nodes(lst);
-	
-	new_node = ft_lstnew(f(lst->content);
-	new_node-next = lst->next;
-	*new_list = new_node;
-	if (lst->next)
+	new_list = NULL;
+	while (lst)
 	{
-		while (lst->next)
+		if (!lst)
+			return (new_list);
+		content = f(lst->content);
+		new_node = ft_lstnew(content);
+		if (!new_node)
 		{
-			lst = lst->next;
-			ft_lstadd_back(t_list **new_list, ft_lstnew(f(lst->content)));
+			del (content);
+			ft_lstclear(&new_list, del);
+			return (NULL);
 		}
+		ft_lstadd_back(&new_list, new_node);
 		lst = lst->next;
-		ft_lstadd_back(t_list **new_list, ft_lstnew(f(lst->content)));
-		new_node-next = lst->next;
 	}
 	return (new_list);
 }

@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 15:24:34 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/19 13:52:43 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/20 10:59:44 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
-t_lstmap	*ft_lstmap(t_list *lst, void *(f*)(void *), void (*del)(void *));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif
