@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahautefe <ahautefe@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 13:19:35 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/12 14:32:41 by ahautefe         ###   ########lyon.fr   */
+/*   Updated: 2026/11/23 10:51:48 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,31 +25,37 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
 /*
+
 #include <stdio.h>
+#include <strings.h>
 
-int     main(void)
+int	main(void)
 {
-        int  array[20];
-        int     i;
+	int	array[20];
+	int	i;
 
-        i = 0;
+	i = 0;
 
-        while (i < 20)
-        {
-                array[i] = i;
-                printf("%i\n", array[i]);
-                i ++;
-        }
+	while (i < 20)
+	{
+		array[i] = i;
+		printf("%i\n", array[i]);
+		i ++;
+	}
 
-        ft_bzero(array, sizeof(int)*10);
-        i = 0;
-        while ( i < 20)
-        {
-                printf("%i\n", array[i]);
-                i++;
-        }
-        return (0);
+	printf("\n");
+
+	//bzero(array, sizeof(int)*10);
+	ft_bzero(array, sizeof(int)*10);
+	i = 0;
+	while ( i < 20)
+	{
+		printf("%i\n", array[i]);
+		i++;
+	}
+
+	bzero(array, sizeof(int)*10);
+	return (0);
 }
 */

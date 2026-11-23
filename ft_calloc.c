@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 11:24:19 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/19 12:43:23 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 12:04:04 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,36 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return ((void *)mem);
 }
+
+//calloc fait exactement comme malloc, mais remplit toute la memoire 
+//	allouee avec des 0.
+
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	size_t	i, nmemb, size;
+	char *ptr = NULL;
+	i = 0;
+	nmemb = 54;
+	size = sizeof(*ptr)*10;
+
+	ptr = ft_calloc(nmemb, size);
+
+	while (i < nmemb * size)
+	{
+		if (ptr[i] != 0)
+		{
+			printf("KO");
+			return (0);
+		}
+		if (ptr[i] == 0)
+			i++;
+		if (i == nmemb * size)
+			printf("test OK\n");
+	}
+	return (0);
+}
+*/

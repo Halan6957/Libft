@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 11:08:04 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/13 10:08:30 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 10:24:55 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,37 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(nbr * sign));
 }
+/*
+
+#include <stdlib.h>
+#include <stdio.h>
+
+void	test_atoi(char *str)
+{
+	printf("\nTest %s :", str);
+	printf("\nft_atoi : %i", ft_atoi(str));
+	printf("\natoi :\t  %i\n\n", atoi(str));
+}
+
+int	main(void)
+{
+	test_atoi("0");
+	test_atoi("42");
+	test_atoi("-42");
+	test_atoi("+42");
+
+	test_atoi("--42");
+	test_atoi("++42");
+	test_atoi("-+42");
+	test_atoi("+-42");
+	test_atoi("- 42");
+
+	test_atoi("42abc99");
+	test_atoi("abc42");
+	test_atoi("");
+	test_atoi("   ");
+
+	test_atoi("2147483647");
+	test_atoi("-2147483648");	
+}
+*/

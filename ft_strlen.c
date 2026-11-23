@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahautefe <ahautefe@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 11:05:54 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/09 11:12:25 by ahautefe         ###   ########lyon.fr   */
+/*   Updated: 2026/11/23 10:27:42 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char	*s)
+int	ft_strlen(const char	*s)
 {
 	int	i;
 

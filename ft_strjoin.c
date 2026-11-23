@@ -6,13 +6,13 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 15:09:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/13 16:21:06 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 10:42:32 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	ft_strlen(char *s);
+int	ft_strlen(const char *s);
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*new_s;
 
-	new_s = malloc((size_t)(ft_strlen((char *)s1) + ft_strlen((char *)s2) + 1));
+	new_s = malloc((size_t)(ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!new_s)
 		return (NULL);
 	i = -1;

@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 11:13:11 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/20 10:18:11 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 08:30:12 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,13 @@ t_list	*ft_lstnew(void *content)
 }
 /*
 #include <stdio.h>
-int    main(void)
+int	main(void)
 {
-    t_list    *mon_noeud;
-    char    contenu[] = "coucou";
+	t_list		*new_node;
+	char		content[] = "coucou"; // test NULL OK
 
-    mon_noeud = ft_lstnew(&contenu);
+	new_node = ft_lstnew(&content);
 
-    printf("%s\n", (char *)mon_noeud->content);
+	printf("%s\n", (char *)new_node->content);
 }
-
 */

@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 13:42:36 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/19 13:49:57 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 10:31:20 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 	f(lst->content);
 }
-
