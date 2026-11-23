@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 11:24:19 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 12:04:04 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 15:07:37 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 //calloc fait exactement comme malloc, mais remplit toute la memoire 
 //	allouee avec des 0.
-
 
 /*
 #include <stdio.h>

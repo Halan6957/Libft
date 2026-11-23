@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 10:18:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 13:41:58 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 14:41:55 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
-
+/*
 #include <stdio.h>
 
 void	test_itoa(int n)
@@ -80,3 +80,4 @@ int	main(void)
 	test_itoa(2147483647);
 	test_itoa(-2147483648);	
 }
+*/
