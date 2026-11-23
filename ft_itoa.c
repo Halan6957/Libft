@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 10:18:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/17 13:24:50 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/23 13:41:58 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,16 +60,23 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
-/*
+
+#include <stdio.h>
+
+void	test_itoa(int n)
+{
+	printf("\nTest %i :", n);
+	printf("\nft_itoa : %s", ft_itoa(n));
+}
+
 int	main(void)
 {
-	printf("%s\n\n", ft_itoa(123456));
-	printf("%s\n\n", ft_itoa(-456));
-	printf("%s\n\n", ft_itoa(-6));
-	printf("%s\n\n", ft_itoa(0));
-	printf("%s\n\n", ft_itoa(10));
-	printf("%s\n\n", ft_itoa(000123456));
-	printf("%s\n\n", ft_itoa(-0));
-	return (0);
+	test_itoa(0);
+	test_itoa(42);
+	test_itoa(-42);
+	test_itoa(1000);
+	test_itoa(-1);
+
+	test_itoa(2147483647);
+	test_itoa(-2147483648);	
 }
-*/
