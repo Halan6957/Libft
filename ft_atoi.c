@@ -6,15 +6,17 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 11:08:04 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 10:24:55 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 09:16:16 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 int	ft_atoi(const char *nptr)
 {
-	long	nbr;
-	int		i;
-	int		sign;
+	long				nbr;
+	size_t				i;
+	int					sign;
 
 	nbr = 0;
 	i = 0;

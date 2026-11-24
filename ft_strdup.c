@@ -6,21 +6,22 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 12:10:53 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/13 10:40:30 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 11:07:48 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stddef.h>
 
-int	ft_strlen(char	*s);
+size_t	ft_strlen(const char	*s);
 
 char	*ft_strdup(const char *s)
 {
-	char	*dest;
-	int		i;
+	char		*dest;
+	size_t		i;
 
 	i = 0;
-	dest = malloc(ft_strlen((char *)s) + 1);
+	dest = malloc(ft_strlen((const char *)s) + 1);
 	if (!dest)
 		return (NULL);
 	while (s[i])

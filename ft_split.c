@@ -6,13 +6,13 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 11:48:31 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/16 15:34:19 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 08:53:37 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-size_t	ft_count_words(char const *s, char c)
+static size_t	ft_count_words(char const *s, char c)
 {
 	size_t	i;
 	size_t	count;
@@ -33,7 +33,7 @@ size_t	ft_count_words(char const *s, char c)
 	return (count);
 }
 
-void	ft_free_alloc_words(char **tab)
+static void	ft_free_alloc_words(char **tab)
 {
 	size_t	i;
 
@@ -46,7 +46,7 @@ void	ft_free_alloc_words(char **tab)
 	free(tab);
 }
 
-int	ft_alloc_words(char **tab, const char *s, char c)
+static int	ft_alloc_words(char **tab, const char *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -74,7 +74,7 @@ int	ft_alloc_words(char **tab, const char *s, char c)
 	return (0);
 }
 
-void	ft_copy_words(char **tab, const char *s, char c)
+static void	ft_copy_words(char **tab, const char *s, char c)
 {
 	int	i;
 	int	j;

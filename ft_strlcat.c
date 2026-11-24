@@ -6,13 +6,13 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 08:39:00 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/13 10:40:33 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 11:27:10 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-int	ft_strlen(char	*s);
+size_t	ft_strlen(const char	*s);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -22,10 +22,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	i = 0;
 	j = 0;
-	while (i < size && dst[i] != '\0')
+	while (i < size && dst[i])
 		i++;
 	len_dest = i;
-	while (i + 1 < size && size > 0 && src[j] != '\0')
+	while (i + 1 < size && src[j])
 	{
 		dst[i] = src[j];
 		j++;
@@ -34,9 +34,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 			dst[i] = '\0';
 	}
 	if (size <= len_dest)
-		return (size + (size_t)ft_strlen((char *)src));
+		return (size + ft_strlen(src));
 	else
-		return (len_dest + (size_t)ft_strlen((char *)src));
+		return (len_dest + ft_strlen(src));
 }
 /*
 #include <string.h>
