@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 13:47:04 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/17 16:26:36 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 16:14:01 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
+/*
+Applies the function f to each character of the
+string s, passing its index as the first argument
+and the character itself as the second. A new
+string is created (using malloc(3)) to store the
+results from the successive applications of f.
+*/

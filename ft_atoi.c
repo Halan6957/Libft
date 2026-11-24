@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 11:08:04 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 09:16:16 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 12:17:34 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,10 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(nbr * sign));
 }
+
+//The ft_atoi() function converts the initial portion of the string pointed to
+// by nptr to int.
+
 /*
 
 #include <stdlib.h>

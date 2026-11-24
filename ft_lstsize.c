@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 14:09:45 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/18 15:13:51 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 13:16:23 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,4 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+//Counts the number of nodes in the list.

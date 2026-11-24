@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 09:36:23 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/12 14:36:11 by ahautefe         ###   ########lyon.fr   */
+/*   Updated: 2026/11/24 13:34:05 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*
+The  ft_memchr()  function  scans the initial n bytes of the memory area pointed
+to by s for the first instance of c.  Both c and the bytes of the memory area
+pointed to by s are interpreted as unsigned char.
+*/

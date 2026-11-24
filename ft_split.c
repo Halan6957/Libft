@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 11:48:31 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 08:53:37 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 14:16:06 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,9 +76,9 @@ static int	ft_alloc_words(char **tab, const char *s, char c)
 
 static void	ft_copy_words(char **tab, const char *s, char c)
 {
-	int	i;
-	int	j;
-	int	k;
+	size_t	i;
+	size_t	j;
+	size_t	k;
 
 	i = 0;
 	j = 0;

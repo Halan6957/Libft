@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 10:06:13 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/20 10:17:14 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 16:20:01 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+/*
+The strnstr() function locates the first occurrence of the null-terminated 
+string little in the string big, where not more than len characters are searched.
+Characters that appear after a ‘\0’ character are not searched.
+  Since the strnstr() function is a FreeBSD specific API, it should only be 
+  used when portability is not a concern.
+*/

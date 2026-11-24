@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 13:19:35 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 10:51:48 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 14:41:42 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+//The bzero() function erases the data in the n bytes of the memory starting at 
+//the location pointed to by s, by writing zeros (bytes containing '\0')
+// to that area.
+
 /*
 
 #include <stdio.h>

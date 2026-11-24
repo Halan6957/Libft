@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 15:01:21 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/12 14:48:24 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 16:20:40 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+/*
+The ft_strrchr() function returns a pointer to the last occurrence of the 
+character c in the string s.
+*/

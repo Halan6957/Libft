@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 11:31:28 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 11:06:05 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 12:20:19 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,13 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
-/*
 
+/*
+Takes a node as parameter and frees its content
+using the function ’del’. Free the node itself but
+does NOT free the next node.
+*/
+/*
 #include <stdio.h>
 
 void	ft_lstadd_back(t_list **lst, t_list *new);

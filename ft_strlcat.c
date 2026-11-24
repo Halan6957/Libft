@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 08:39:00 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 11:27:10 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 16:10:14 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,28 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (len_dest + ft_strlen(src));
 }
 /*
-#include <string.h>
-#include <stdio.h>
+
+The ft_strlcpy() and ft_strlcat() functions copy and concatenate strings
+respectively.They are designed to be safer, more consistent, and less error
+prone replacements for strncpy(3) and strncat(3).  Unlike those functions,
+strlcpy() and strlcat() take the full size of the buffer (not just the length)
+and guarantee to NUL-terminate the result (as long as size is larger than 0
+or, in the case of strlcat(), as long as there is at least one byte free in dst).
+Note that a byte for the NUL should be included in size. Also note that strlcpy()
+and strlcat() only operate on true “C” strings. This means that for strlcpy() src
+must be NUL-terminated and for strlcat() both src and dst must be NUL-terminated.
+*/
 
 // Doit copier src a la fin de dest, dans la limite de size caracteres
 // renvoie la taille totale de la phrase quil a essaye de copier
 // si size < dest, la longueur de dest initiale est considere
 // 	 comme = a size (pour le calcul du retour)
 // le size en parametre compte le \0 de fin de chaine
+/*
+
+#include <string.h>
+#include <stdio.h>
+
 int	main(void)
 {
 	char	dest [10] = "DEST";
@@ -58,5 +72,4 @@ int	main(void)
 
 	return (0);
 }
-
 */

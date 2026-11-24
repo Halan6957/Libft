@@ -6,12 +6,11 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 13:51:25 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/20 14:19:55 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 14:41:25 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_back(t_list **lst, t_list *new);
@@ -43,3 +42,10 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+/*
+Iterates through the list ’lst’, applies the
+function ’f’ to each node’s content, and creates
+a new list resulting of the successive applications
+of the function ’f’. The ’del’ function is used to
+delete the content of a node if needed.
+*/

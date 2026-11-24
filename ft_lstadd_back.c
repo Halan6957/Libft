@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 15:33:20 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 15:07:16 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 12:17:30 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		node_address = node_address->next;
 	node_address->next = new;
 }
+
+//Add the node 'new' at the end of the list.
 /*
 #include <stdio.h>
 

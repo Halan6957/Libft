@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 16:27:03 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/17 16:28:53 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 14:10:42 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,7 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+/*
+Outputs the character ’c’ to the specified file
+descriptor.
+*/

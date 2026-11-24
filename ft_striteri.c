@@ -6,21 +6,25 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 15:42:42 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 08:53:30 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 15:25:22 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-size_t	ft_strlen(const char	*s);
-
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
+	unsigned int	i;
 
 	if (!s || !f)
 		return ;
 	i = -1;
-	while (++i < ft_strlen(s))
+	while (s[++i])
 		f(i, &s[i]);
 }
+/*
+Applies the function ’f’ to each character of the
+string passed as argument, passing its index as
+the first argument. Each character is passed by
+address to ’f’ so it can be modified if necessary
+*/

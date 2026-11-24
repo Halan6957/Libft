@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 11:13:11 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 08:30:12 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 13:16:06 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,12 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
+/*
+Allocates memory (using malloc(3)) and returns
+a new node. The ’content’ member variable is
+initialized with the given parameter ’content’.
+The variable ’next’ is initialized to NULL.
+*/
 /*
 #include <stdio.h>
 int	main(void)

@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 09:19:52 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/18 10:17:07 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 14:14:47 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,10 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, &digit, 1);
 	}
 }
+/*
+Outputs the integer ’n’ to the specified file
+descriptor.
+*/
 /*
 int	main(void)
 {

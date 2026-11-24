@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 12:21:41 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/13 15:03:40 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 16:21:37 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-
+/*
+Allocates memory (using malloc(3)) and returns a
+substring from the string ’s’.
+The substring starts at index ’start’ and has a
+maximum length of ’len’.
+*/
 /*
 #include <stdio.h>
 int main(void)

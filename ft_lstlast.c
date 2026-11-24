@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 15:02:52 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/18 15:13:23 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 12:36:06 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,4 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+//Returns the last node of the list.

@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 07:32:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/12 15:53:07 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 14:33:52 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,22 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/* 
- 
-int main(void)
+/*The  ft_memmove()  function copies n bytes from memory area src to memory
+area dest.  The memory areas may overlap.
+*/
+/*
+#include <stdio.h>
+
+int	main(void)
 {
-    
+	char	src[] = {'A', 'B', 'C', 'D', 'E', 'F', '\0'};
+	char	*dest;
+
+	dest = src + 2;
+	printf("source : %s\ndest : %s\n", src, dest);
+	ft_memmove(dest, src, 4);
+	printf("\nMemmove\nsource : %s\ndest : %s\n", src, dest);
+	return (0);
 }
 
 */

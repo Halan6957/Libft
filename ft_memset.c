@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahautefe <ahautefe@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 11:10:10 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/12 14:32:22 by ahautefe         ###   ########lyon.fr   */
+/*   Updated: 2026/11/24 14:09:28 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
+/*The ft_memset() function fills the first n bytes of the memory area
+pointed to by s with the constant byte c.
+*/
 /*
 #include <stdio.h>
 

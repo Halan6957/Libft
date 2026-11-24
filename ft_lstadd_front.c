@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 12:59:20 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 09:21:32 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 12:18:27 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 /*
+
+//Add the node 'new' att the beginning of the list.
 
 #include <stdio.h>
 

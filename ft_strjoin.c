@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 15:09:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 08:53:47 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 15:41:18 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ size_t	ft_strlen(const char *s);
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	int		j;
+	size_t	i;
+	size_t	j;
 	char	*new_s;
 
 	new_s = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
@@ -32,6 +32,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new_s[i + j] = '\0';
 	return (new_s);
 }
+
+/*
+Allocates memory (using malloc(3)) and returns a
+new string, which is the result of concatenating
+’s1’ and ’s2’.
+*/
 /*
 #include <stdio.h>
 

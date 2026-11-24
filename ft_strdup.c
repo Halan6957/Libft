@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 12:10:53 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 11:07:48 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 16:11:00 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,12 @@ char	*ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
+
+/*
+The ft_strdup() function returns a pointer to a new string which is a duplicate
+of the string s.  Memory for the new string is obtained with malloc(3),
+and can be freed with free(3).
+*/
 /*
 #include <stdio.h>
 

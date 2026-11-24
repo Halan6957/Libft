@@ -6,12 +6,11 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 11:24:19 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 10:14:23 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/24 12:30:08 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdint.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -20,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (size == 0)
 		return (malloc(0));
-	if (nmemb > SIZE_MAX / size)
+	if (nmemb > 2147483647 / size)
 		return (NULL);
 	mem = malloc(nmemb * size);
 	if (!mem)
@@ -36,8 +35,14 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return ((void *)mem);
 }
 
-//calloc fait exactement comme malloc, mais remplit toute la memoire 
-//	allouee avec des 0.
+/*
+The  ft_calloc()  function  allocates memory for an array of nmemb elements of
+	size bytes each and returns a pointer to the allocated memory. The memory is
+	set to zero. If nmemb or size is 0,then ft_calloc() returns a unique
+	pointer value that can later be successfully passed to free(). If the
+	multiplication of nmemb and size would result in integer overflow,  then
+	calloc() returns NULL.
+*/
 
 /*
 #include <stdio.h>
