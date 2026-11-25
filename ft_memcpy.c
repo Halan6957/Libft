@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 13:38:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 15:27:21 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:47:35 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*ptrdest;
 	unsigned char	*ptrsrc;
 
-	if (!dest && !src)
-		return (NULL);
 	ptrdest = (unsigned char *)dest;
 	ptrsrc = (unsigned char *)src;
 	i = 0;

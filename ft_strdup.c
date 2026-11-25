@@ -6,12 +6,11 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 12:10:53 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 16:11:00 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:42:17 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stddef.h>
 
 size_t	ft_strlen(const char	*s);
 

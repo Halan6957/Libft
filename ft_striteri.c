@@ -6,11 +6,9 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 15:42:42 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 15:25:22 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:42:20 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stddef.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

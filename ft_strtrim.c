@@ -6,15 +6,15 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 09:02:54 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 16:21:10 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:41:19 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	ft_strlen(char	*s);
+size_t	ft_strlen(const char	*s);
 
-int	is_in_set(char c, const char *set)
+static int	is_in_set(char c, const char *set)
 {
 	int	i;
 

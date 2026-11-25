@@ -6,12 +6,11 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 12:21:41 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 16:21:37 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:42:24 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stddef.h>
 
 int	ft_strlen(char *s);
 
