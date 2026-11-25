@@ -92,12 +92,10 @@ Build the library from the root of the repository:
     make fclean  # remove object files and libft.a
     make re      # rebuild everything
 
-To use it in your own project, include the header and link the
-library:
+To use it in your own project, include the header :
 
     #include "libft.h"
 
-    cc main.c -L. -lft -o program
 
 ## Resources
 

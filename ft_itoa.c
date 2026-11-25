@@ -6,11 +6,11 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/17 10:18:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/23 14:41:55 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/25 10:01:14 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 #include <stdlib.h>
 
 static	int	count_digit(int n)
@@ -60,6 +60,12 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
+
+/*
+Allocates memory (using malloc(3)) and returns
+a string representing the integer received as an
+argument. Negative numbers must be handled.
+*/
 /*
 #include <stdio.h>
 

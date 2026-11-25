@@ -6,72 +6,66 @@
 #    By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/09 10:07:12 by ahautefe          #+#    #+#              #
-#    Updated: 2026/11/24 16:35:04 by ahautefe         ###   ########.fr        #
+#    Updated: 2026/11/25 12:53:22 by ahautefe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
-SRCS = 
-ft_atoi
-ft_bzero
-ft_calloc
-ft_isalnum
-ft_isalpha
-ft_isascii
-ft_isdigit
-ft_isprint
-ft_memchr
-ft_memcmp
-ft_memcpy
-ft_memmove
-ft_memset
-ft_strchr
-ft_strdup
-ft_strlcat
-ft_strlcpy
-ft_strlen
-ft_strncmp
-ft_strnstr
-ft_strrchr
-ft_tolower
-ft_toupper
-
-ft_strjoin
-ft_strtrim
-ft_split
-ft_itoa
-ft_strmapi
-ft_striteri
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-
-ft_lstnew
-ft_lstadd_front
-ft_lstsize
-ft_lstlast
-ft_lstadd_backdelone
-ft_lstclear
-ft_lstiter
-ft_lstmap
-
-
-
+SRCS = 	ft_atoi.c \
+		ft_bzero.c \
+		ft_calloc.c \
+		ft_isalnum.c \
+		ft_isalpha.c \
+		ft_isascii.c \
+		ft_isdigit.c \
+		ft_isprint.c \
+		ft_memchr.c \
+		ft_memcmp.c \
+		ft_memcpy.c \
+		ft_memmove.c \
+		ft_memset.c \
+		ft_strchr.c \
+		ft_strdup.c \
+		ft_strlcat.c \
+		ft_strlcpy.c \
+		ft_strlen.c \
+		ft_strncmp.c \
+		ft_strnstr.c \
+		ft_strrchr.c \
+		ft_tolower.c \
+		ft_toupper.c \
+		ft_substr.c \
+		ft_strjoin.c \
+		ft_strtrim.c \
+		ft_split.c \
+		ft_itoa.c \
+		ft_strmapi.c \
+		ft_striteri.c \
+		ft_putchar_fd.c \
+		ft_putstr_fd.c \
+		ft_putendl_fd.c \
+		ft_putnbr_fd.c \
+		ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
-INCLUDES = -I includes
 
 all : $(NAME)
 
-%.o : %.c
-	$(CC) $(CFLAGS) $(INCLUDES) -c $(SRCS)
+%.o : %.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-
-.PHONY: all clean fclean re
 
 clean :
 	rm -f $(OBJS)
@@ -81,6 +75,5 @@ fclean : clean
 
 re : fclean all
 
-#ajouter ligne pour les fichier .d
+.PHONY: all clean fclean re
 
-#CINCLUDE = -MMd -MP

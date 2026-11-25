@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 07:32:08 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 14:33:52 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/25 11:51:06 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,4 @@ int	main(void)
 	printf("\nMemmove\nsource : %s\ndest : %s\n", src, dest);
 	return (0);
 }
-
 */
