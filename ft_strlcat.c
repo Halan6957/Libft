@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 08:39:00 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 16:10:14 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/27 06:52:24 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	i = 0;
 	j = 0;
-	while (i < size && dst[i])
+	while (dst[i])
 		i++;
 	len_dest = i;
 	while (i + 1 < size && src[j])
