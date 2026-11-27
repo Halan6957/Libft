@@ -6,7 +6,7 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 13:51:25 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/24 14:41:25 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/27 07:32:32 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new_list = NULL;
 	while (lst)
 	{
-		if (!lst)
-			return (new_list);
 		content = f(lst->content);
 		new_node = ft_lstnew(content);
 		if (!new_node)
