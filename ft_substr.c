@@ -6,13 +6,13 @@
 /*   By: ahautefe <ahautefe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 12:21:41 by ahautefe          #+#    #+#             */
-/*   Updated: 2026/11/25 13:42:24 by ahautefe         ###   ########.fr       */
+/*   Updated: 2026/11/27 08:36:59 by ahautefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	ft_strlen(char *s);
+size_t	ft_strlen(const char *s);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -20,20 +20,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char			*substr;
 	unsigned int	s_len;
 
-	s_len = (unsigned int)ft_strlen((char *)s);
+	s_len = ft_strlen(s);
 	if (start >= s_len)
 	{
 		len = 0;
 		substr = malloc(1);
 	}
-	else if (len < (size_t)(s_len - start))
+	else if (len < s_len - start)
 		substr = malloc(len + 1);
 	else
-		substr = malloc((size_t)(s_len - start + 1));
+		substr = malloc(s_len - start + 1);
 	if (!substr)
 		return (NULL);
 	i = -1;
-	while (++i < len && i < (size_t)(s_len - start))
+	while (++i < len && i < s_len - start)
 		substr[i] = s[start + i];
 	substr[i] = '\0';
 	return (substr);
